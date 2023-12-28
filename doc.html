@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Black+Ops+One&family=Lilita+One&family=Josefin+Sans:wght@500&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <title>API Paises</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md sticky-top navmaster shadow">
+      <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo2.png" width="80" alt="JamtDev" />
+          </a>
+          <ul
+            class="navbar-nav d-flex justify-content-center align-items-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="doc.html">Documentación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="align-items-strech master sec-documentacion">
+      <div class="d-flex flex-column">
+        <h2 class="py-3">Documentación</h2>
+        <p>
+          Esta es una API REST bastante fácil de utilizar que comenzó como una
+          prueba en la pc de un compañero y termino siendo esta API que espero
+          poder ir ampliando, debajo están todos los detalles y espero te sea de
+          provecho.
+        </p>
+        <h2 class="py-3">API</h2>
+        <p>
+          <strong>URL Base:</strong>
+          <a
+            href="https://api-paises-production.up.railway.app/v1"
+            target="_blank"
+            >https://api-paises-production.up.railway.app/v1</a
+          >
+        </p>
+        <p>
+          Esta es la url base para acceder a los diferentes
+          <strong>endpoints</strong>. Todos los endpoints son solicitudes
+          <strong>GET</strong> y devuelven información en formato
+          <strong>JSON</strong>
+        </p>
+        <p>Actualmente la API tiene estos diferentes endpoints:</p>
+        <ul>
+          <li>
+            <strong>/paises</strong> : Devuelve un listado de todos los países.
+          </li>
+          <li>
+            <strong>/random</strong> : Devuelve un listado aleatorio de 20
+            países
+          </li>
+          <li><strong>/pais/{id}</strong> : Devuelve un país en especifico.</li>
+          <li>
+            <strong>/idioma/{idioma}</strong> : Devuelve un listado de los
+            países con el idioma filtrado.
+          </li>
+          <li>
+            <strong>/divisa/{codigoDivisa}</strong> : Devuelve un listado de los
+            países que usan la divisa colocada en base al código de esta.
+            <strong>EUR</strong> = Euro / <strong>USD</strong> = Dólar
+            estadounidense, etc
+          </li>
+        </ul>
+
+        <p>Aquí un ejemplo de los datos que arroja:</p>
+      </div>
+
+      <pre class="json">
+          {
+              "idPais": 24,
+              "nombre": "Bosnia y Herzegovina",
+              "idioma": [
+                  "Bosnio",
+                  "Croata",
+                  "Serbio"
+              ],
+              "gentilicio": [
+                  "Bosnio/Bosnia",
+                  "Bosnioherzegovino/Bosnioherzegovina"
+              ],
+              "codigoDivisa": "BAM",
+              "divisa": "marco convertible",
+              "urlImg": "https://raw.githubusercontent.com/Jamtgoner/api-paises/main/src/Banderas/Bosnia%20y%20Herzegovina.png",
+              "capital": "Sarajevo",
+              "region": "Europa del Sureste",
+              "zonaHoraria": "UTC+1"
+          }
+          </pre
+      >
+      <h2 class="py-3">Ayúdanos</h2>
+      <p class="py-4">
+        Te invito a que veas el proyecto en
+        <a href="https://github.com/Jamtgoner/api-paises" target="_blank"
+          >github</a
+        >
+        y hagas tus aportes para que esta api sea mucho mejor y de mas provecho
+        para todos.
+      </p>
+    </section>
+
+    <footer
+      id="contacto"
+      class="footer d-flex flex-column align-items-center justify-content-center"
+    >
+      <img
+        class="rounded-circle img-fluid py-2"
+        src="/images/logo2.png"
+        width="120"
+        alt="Logo de Ángel"
+      />
+      <div
+        class="iconos-redes d-flex align-items-center justify-content-center flex-wrap"
+      >
+        <a
+          href="https://twitter.com/julio_angel22"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-twitter-x"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/julio-angel-mejia-tejada-b675a5123/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+
+        <a
+          href="https://github.com/Jamtgoner/api-paises"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-github"></i>
+        </a>
+      </div>
+      <p class="text-center py-2">⚡️ Julio Ángel Mejía | 2023 ⚡️</p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

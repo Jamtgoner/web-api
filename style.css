@@ -1,0 +1,205 @@
+
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: rgb(3, 19, 32);
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+.navmaster{
+  background-color: rgb(6, 27, 46);
+ & a{
+    font-size: 20px;
+    color: white;
+    font-family: "Lilita One", sans-serif;
+  }
+}
+
+.cont-banderas{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 15px;
+    margin: 25px 100px;
+    justify-content: center;
+
+   & img{
+      height: 200px;
+      min-width: 300px;
+    }
+
+   & i{
+      font-size: 35px;
+    }
+} 
+
+.cont-buscador{
+  margin: 25px 100px;
+}
+
+  .overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding-top: 50px;
+    transition: all 0.2s ease;
+    opacity: 0;
+    text-align: center;
+   & p{
+      font-weight: bold;
+      color: white;
+    }
+   & i{
+      color: white;
+    }
+  }
+
+  .bandera {
+    position: relative;
+    display: grid;
+  }
+
+  .bandera:hover img {
+    opacity: 0.1;
+  }
+  
+  .bandera:hover .overlay {
+    opacity: 1;
+  }
+
+  .pais{
+    display: flex;
+    width: 100%;
+    text-align: center;   
+   & p{
+      font-size: 20px;
+      font-weight: bold;
+      margin: 0;
+      width: 100%;
+      padding: 3px;
+    } 
+  }
+
+  .idiomas{
+    width: 100%;
+   & p{
+      font-size: 15px;
+      font-weight: bold;
+      margin: 0;
+      width: 100%;
+      text-align: center;
+      border-bottom: solid 1px rgb(5, 5, 5);
+    }
+  }
+
+  .master {
+    background-color: #f5f6f7;
+    min-height: 450px;   
+    & h1 {
+      font-size: 5rem;
+      font-family: "Lilita One", sans-serif;
+      margin-bottom: 10px;
+    }
+
+    & h2 {
+      font-size: 3rem;
+      font-family: "Lilita One", sans-serif;
+      margin-bottom: 10px;
+      border-bottom: solid 1px rgb(5, 5, 5);
+    }
+  
+  }
+
+  .sec-documentacion{
+    padding: 2rem;
+    & p{
+      margin: 15px;
+      font-size: 20px;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+
+    & li{
+      margin: 10px;
+      font-size: 20px;
+      font-family: 'Josefin Sans', sans-serif;
+    }
+  }
+  
+  .master-principal {
+    padding: 0.5rem;
+  }
+  
+  .master-image {
+    margin: 20px;
+    border: 2px solid #dad5d5;
+  }
+
+  .iconos-redes{
+    gap: 20px;
+
+   & i{
+      color: white;
+      transition: all 0.2s ease-in-out;
+      font-size: 35px;
+    }
+  }
+
+  .footer {
+    color: white;
+    background-color: rgb(2, 11, 19);
+    padding: 25px;
+  
+   & li {
+      font-weight: bold;
+    }
+  }
+
+  .nav-link:hover {
+    color: #54dfff;
+  }
+
+  .escritura{
+    margin-bottom: 15px;
+
+   & h1 {
+    overflow: hidden;
+    border-right: .15em solid #1ac9f6; 
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+      typing 2.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+    }
+  }
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #1ac9f6; }
+  }
+
+  pre.json {
+    font-size: 20px;
+    background-color: rgb(6, 27, 46);;
+    padding: 10px;
+    border-radius: 50px;
+    overflow: auto;
+    color: white;
+    margin-bottom: 25px;
+}
+
