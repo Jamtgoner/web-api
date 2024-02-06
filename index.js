@@ -1,6 +1,6 @@
 const cargarPais = async () => {
 
-const apiUrl = "https://country-api-8rtc.onrender.com/v1/random"
+const apiUrl = "https://country-api.azurewebsites.net/v3/random"
 
 const res = await fetch(apiUrl);
 
