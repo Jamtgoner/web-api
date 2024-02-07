@@ -106,12 +106,13 @@ body{
   .master {
     background-color: #f5f6f7;
     min-height: 450px;   
+    
     & h1 {
       font-size: 5rem;
       font-family: "Lilita One", sans-serif;
       margin-bottom: 10px;
     }
-
+  
     & h2 {
       font-size: 3rem;
       font-family: "Lilita One", sans-serif;
@@ -119,6 +120,11 @@ body{
       border-bottom: solid 1px rgb(5, 5, 5);
     }
   
+    @media screen and (max-width: 520px) {
+      & h1 {
+        font-size: 3rem;
+      }
+    }  
   }
 
   .sec-documentacion{
@@ -201,5 +207,9 @@ body{
     overflow: auto;
     color: white;
     margin-bottom: 25px;
+}
+
+.navbar-toggler{
+  background-color: #f5f6f7;
 }
 
