@@ -18,8 +18,8 @@ datos.forEach( (pais, index) =>{
           <i class="bi bi-people-fill"></i>
           <p>${pais.gentilicio.join('<br>')}</p>
         </div>
-        <div class="pais text-bg-dark align-items-center flex-column">
-          <p class="text-bg-secondary paisF">${pais.pais}</p>
+        <div class="pais text-bg-secondary align-items-center flex-column">
+          <p class="text-bg-dark paisF">${pais.pais}</p>
           <p>${pais.capital}</p>
         </div>
       </div>
