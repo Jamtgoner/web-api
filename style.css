@@ -35,8 +35,9 @@ body{
     justify-content: center;
 
    & img{
-      height: 200px;
-      min-width: 300px;
+      height: auto;
+      width: 100%;
+      aspect-ratio: 3/2;
     }
 
    & i{
